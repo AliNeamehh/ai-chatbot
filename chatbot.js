@@ -4,7 +4,7 @@ document.getElementById('sendBtn').addEventListener('click', function() {
         appendMessage('user', userInput);
         document.getElementById('userInput').value = '';
 
-        fetch('./server/chatbot.php', {
+        fetch('chatbot.php', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/x-www-form-urlencoded',
